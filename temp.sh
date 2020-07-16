@@ -4,4 +4,4 @@ temp=$(</sys/class/thermal/thermal_zone0/temp)
 temp=$(($temp / 1000))
 now=$(date)
 temp+=",$now"
-echo "${temp}" >> temp.log
+echo "${temp}" >> ~/projects/pitemp/temp.log
